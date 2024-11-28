@@ -1,6 +1,12 @@
-quesos = ["Cheddar", "Edam", "Gouda"]
+import math
 
-print(quesos[2][3])
+quesos = ["Cheddar", "Edam", "Gouda", "Cabrales", "Mozarella"]
+
+quesos.pop(0,1)
+print(quesos)
+
+exit()
+
 
 matriz = [
     [[1, 0, 0], [0, 2, 0], [0, 0, 3]],
@@ -15,5 +21,7 @@ print(matriz[2][0][2])
 matriz[2][0][2] = "patata"
 print(matriz)
 
-matriz[0] = "patata"
+matriz[0] = math.pi
 print(matriz)
+
+# FALLA: pi no tinene indices, es un numero matriz[0][0][2]
